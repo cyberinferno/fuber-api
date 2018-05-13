@@ -1,0 +1,34 @@
+{
+    "name": "cyberinferno/fuber-api",
+    "description": "Füber, an on call taxi service.",
+    "type": "project",
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.0.0",
+        "yiisoft/yii2": "~2.0.6",
+        "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
+        "schmunk42/yii2-giiant": "@stable",
+        "cyberinferno/yii2-phpdotenv": "^2.0",
+        "roave/security-advisories": "dev-master",
+        "hosannahighertech/yii2-oauth2-server": "*"
+    },
+    "require-dev": {
+        "yiisoft/yii2-debug": "~2.0.0",
+        "yiisoft/yii2-gii": "~2.0.0",
+        "yiisoft/yii2-faker": "~2.0.0",
+        "codeception/base": "^2.2.3",
+        "codeception/verify": "~0.3.1"
+    },
+    "config": {
+        "process-timeout": 1800,
+        "fxp-asset": {
+            "enabled": false
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
+}

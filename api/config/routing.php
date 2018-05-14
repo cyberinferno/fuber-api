@@ -9,4 +9,12 @@ return [
         'pluralize'         => false,
         'except' => ['create', 'update', 'delete']
     ],
+    [
+        'class'             => 'yii\rest\UrlRule',
+        'controller'        => [
+            'booking'
+        ],
+        'pluralize'         => false,
+        'except' => ['index', 'delete']
+    ],
 ];

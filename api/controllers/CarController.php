@@ -11,12 +11,13 @@ class CarController extends Controller
 {
     public function actionIndex()
     {
+        $searchModel = new Car();
         $serializer = new Serializer([
             'request' => \Yii::$app->request,
             'response' => \Yii::$app->response,
             'collectionEnvelope' => 'items'
         ]);
-        return $serializer->serialize(Car::findAll([]));
+        return $serializer->serialize($searchModel->search(\Yii::$app->request->queryParams));
     }
 
     public function actionView($id)

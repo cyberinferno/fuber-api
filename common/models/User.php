@@ -4,7 +4,6 @@ namespace common\models;
 
 use OAuth2\Storage\UserCredentialsInterface;
 use Yii;
-use yii\base\NotSupportedException;
 use common\models\base\User as BaseUser;
 use yii\helpers\ArrayHelper;
 use yii\web\IdentityInterface;
@@ -44,7 +43,7 @@ class User extends BaseUser implements IdentityInterface, UserCredentialsInterfa
      */
     public static function findIdentityByAccessToken($token, $type = null)
     {
-        throw new NotSupportedException('"findIdentityByAccessToken" is not implemented.');
+        return self::findByUsername($token);
     }
 
     /**

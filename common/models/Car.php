@@ -11,6 +11,11 @@ use yii\helpers\ArrayHelper;
  */
 class Car extends BaseCar
 {
+    const STATUS_AVAILABLE = 10;
+    const STATUS_BOOKED = 20;
+
+    const TYPE_NORMAL = 10;
+    const TYPE_HIPSTER = 20;
 
     public function behaviors()
     {

@@ -7,9 +7,9 @@ $params = array_merge(
 );
 
 return [
-    'id' => 'app-frontend',
+    'id' => 'app-api',
     'basePath' => dirname(__DIR__),
-    'defaultRoute' => '/device',
+    'defaultRoute' => 'car',
     'bootstrap' => [
         'log',
         [
@@ -39,14 +39,7 @@ return [
                     'always_issue_new_refresh_token' => true
                 ]
             ]
-        ],
-        'audit' => [
-            'class' => 'bedezign\yii2\audit\Audit',
-            'ignoreActions' => ['audit/*', 'device/update'],
-        ],
-        'manage' => [
-            'class' => 'api\modules\manage\Module'
-        ],
+        ]
     ],
     'components' => [
         'request' => [

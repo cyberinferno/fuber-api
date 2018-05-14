@@ -4,7 +4,7 @@ An on call taxi service.
 Built using Yii2 PHP framework making use of MySQL database.
 
 ## Requirement
-* PHP 7.1
+* PHP 7.0
 * Composer Package Manager
 * MySQL
 
